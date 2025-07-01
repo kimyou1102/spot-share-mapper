@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+# 장소 공유 서비스
 
-## Project info
+[배포 사이트](https://spot-share-mapper.lovable.app)
 
-**URL**: https://lovable.dev/projects/05f6155e-836d-46cf-853e-4800c85907b9
+## 페르소나
 
-## How can I edit this code?
+장소 탐험가 - 윤슬기 (26세)
 
-There are several ways of editing your application.
+직업: 콘텐츠 마케터
 
-**Use Lovable**
+라이프스타일: 새로운 장소, 예쁜 카페나 핫플을 찾아다니는 걸 좋아함. 친구들과 자주 약속을 잡고, 장소 추천을 주도하는 편.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/05f6155e-836d-46cf-853e-4800c85907b9) and start prompting.
+목표: 내가 알고 있는 좋은 장소를 친구들과 쉽게 공유하고, 친구들의 단골 장소도 함께 보고 싶음
 
-Changes made via Lovable will be committed automatically to this repo.
+니즈: 지도를 기준으로 장소를 시각적으로 비교하고, 여러 사람의 추천 장소를 한눈에 보기
 
-**Use your preferred IDE**
+페인 포인트:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 말로 설명하면 서로 어딘지 몰라서 헷갈림
+- 친구들과 장소 추천을 정리하려고 해도 스크린샷, 카톡, 지도 링크가 뒤섞여 불편함
+- 네이버 지도의 즐겨찾기를 공유하려 해도 식당, 카페 등 카테고리별로 저장된 것을 일일이 공유하는 것이 귀찮음
+- 
+## 사용자 시나리오 및 스토리
+약속 장소를 정할 때 지도 기반으로 공유하기상황: 슬기와 친구들이 다음 주에 홍대에서 만나기로 했는데, 각자 가고 싶은 장소를 추천하고 있음. 슬기가 '마플맵'을 열고 직접 구역을 지정해 친구들과 장소를 시각적으로 공유하기로 함.사용자 시나리오:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. 슬기는 마플맵 웹사이트를 열고 홍대 근처 지도를 연다
 
-Follow these steps:
+2. 마우스로 홍대 일대를 선택하고 '공유' 버튼을 누른다
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. 친구들이 추천한 장소들이 카테고리별로 지도에 마커로 나타난다
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. 자신의 네이버 지도 즐겨찾기 중 이 지역 내 장소들도 자동으로 표시된다
 
-# Step 3: Install the necessary dependencies.
-npm i
+5. 친구들과 함께 공유된 링크를 보며 각자 선호하는 장소를 고르고, 카톡 대신 지도에서 바로 결정함사용자 스토리:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+"친구들과 장소를 정할 때마다 다들 링크만 던져줘서 어디가 어딘지 모르겠어요.
 
-**Edit a file directly in GitHub**
+그래서 저는, 지도를 기준으로 추천 장소를 한눈에 보고 함께 결정하고 싶어요.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/05f6155e-836d-46cf-853e-4800c85907b9) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+그렇게 하면 누구나 자기 단골 장소도 쉽게 보여줄 수 있고, 헷갈릴 일도 없어요."
